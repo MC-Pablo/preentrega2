@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -113,17 +114,11 @@ iframe {
     border-radius: 10px;
 }
 
-/* principal */
-
-.divDestacados {
-    margin: 10px;
-    display: inline;
-}
+/* Inicio */
 
 .imgProducto {
     margin: 5px;
     padding: 5px;
-    display: inline;
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -140,6 +135,7 @@ iframe {
     object-fit: cover;
     border-radius: 30px;
 }
+
 
 /* Mundocafe */
 
