@@ -113,8 +113,8 @@ iframe {
 /* Inicio */
 
 .imgProducto {
-    margin: 5px;
-    padding: 5px;
+    margin: 3px;
+    padding: 3px;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -207,4 +207,22 @@ textarea {
     font-size: 15px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+/* medias queries */
+
+.container {}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "Destacados"
+            "producto1"
+            "producto2"
+            "producto3";
+
+
+    }
 }
