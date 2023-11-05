@@ -15,6 +15,7 @@ header {
 
     text-align: center;
     padding: 10px 20px;
+    font-weight: bold;
 
 
 }
@@ -29,6 +30,7 @@ nav ul li {
     list-style: none;
     display: inline-block;
     margin: 0 15px;
+    font-weight: bold;
 
 
 }
@@ -39,7 +41,7 @@ nav ul li {
     list-style: none;
     display: inline-block;
     margin: 5px 15px;
-    text-decoration: underline;
+    font-weight: bold;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     text-align: center;
@@ -63,19 +65,20 @@ main {
 
 h1 {
     text-align: center;
-    text-decoration: underline;
     text-transform: uppercase;
     margin: 20px 0px;
     font-size: 25px;
+    font-weight: bold;
 
 }
 
 h2 {
     text-align: center;
-    text-decoration: underline;
     text-transform: uppercase;
     margin: 20px 0px;
     font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -83,6 +86,8 @@ p {
     margin: 10px;
     padding: 10px;
     display: auto;
+    text-decoration: solid black;
+    font-weight: 600;
 }
 
 
@@ -112,9 +117,11 @@ iframe {
 
 /* Inicio */
 
-.imgProducto {
-    margin: 3px;
-    padding: 3px;
+.imgProducto1,
+.imgProducto2,
+.imgProducto3 {
+    margin: 2px;
+    padding: 2px;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -124,7 +131,7 @@ iframe {
 
 /* Productos */
 
-.imgProducto1 {
+.imgProd {
 
     width: 250px;
     height: 250px;
@@ -210,19 +217,3 @@ textarea {
 }
 
 /* medias queries */
-
-.container {}
-
-@media screen and (max-width: 480px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "Destacados"
-            "producto1"
-            "producto2"
-            "producto3";
-
-
-    }
-}
