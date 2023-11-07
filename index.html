@@ -18,43 +18,54 @@
 
 <body>
     <header>
-        <a href="index.html">
-            <img class="Logo" src="./multimedia/imagenes/primerocafelogo.png" id="top" alt="fotologo" width="300px">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <h2>
-                        <a href="./index.html">Inicio</a>
-                    </h2>
-                </li>
-                <li>
-                    <h2>
-                        <a href="./html/productos.html">Productos</a>
-                    </h2>
-                </li>
-                <li>
-                    <h2>
-                        <a href="./html/mundocafe.html"> El mundo del café</a>
-                    </h2>
-                </li>
-                <li>
-                    <h2>
-                        <a href="./html/nosotros.html">Nosotros</a>
-                    </h2>
-                </li>
-                <li>
-                    <h2>
-                        <a href="./html/contacto.html">Contactanos</a>
-                    </h2>
-                </li>
-                <li>
-                    <h2>
-                        <a href="#abajo">Seguinos</a>
-                    </h2>
-                </li>
-            </ul>
+        <div>
+            <a href="index.html">
+                <img class="Logo" src="./multimedia/imagenes/primerocafelogo.png" id="top" alt="fotologo" width="300px">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./multimedia/imagenes/favicon.png" alt="logonav"
+                        class="logonav"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/mundocafe.html">EL MUNDO DEL CAFÉ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./html/productos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Nuestros Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./html/productos.html">Cafés</a></li>
+                                <li><a class="dropdown-item" href="./html/productos.html">Cafeteras</a></li>
+                                <li><a class="dropdown-item" href="./html/productos.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/contacto.html">CONTACTANOS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark btn-light btn-sm" type="submit">BUSCAR</button>
+                    </form>
+                </div>
+            </div>
         </nav>
+
     </header>
     <main>
         <div id="carouselExampleIndicators" class="carousel slide m-auto w-50">
@@ -103,7 +114,7 @@
             distinctio perferendis qui consequatur dolorem consectetur quod pariatur.
         </p>
         </div>
-        <div class="nav2">
+        <div>
             <nav class="navegador2">
                 <h2>NUESTROS PRODUCTOS</h2>
                 <ul>
