@@ -47,6 +47,7 @@ header {
 
 
 .navegador2 ul li {
+    width: auto;
     list-style: none;
     display: inline-block;
     margin: 5px 5px;
@@ -134,6 +135,13 @@ iframe {
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
+
+}
+
+.row {
+    width: auto;
+    margin: 1px;
+    padding: 1px;
 
 }
 

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+}
+
+.caja {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.grad1 {
+
+    background: linear-gradient(to top, green, yellow, red);
+    border-style: double;
+}
+
+.grad2 {
+    background: radial-gradient(navy, pink, blueviolet);
+    height: 150px;
+}
