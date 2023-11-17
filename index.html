@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
@@ -18,54 +21,63 @@
 
 <body>
     <header>
-        <div>
-            <a href="index.html">
-                <img class="Logo" src="./multimedia/imagenes/logoprimerocafe.avif" id="top" alt="fotologo"
-                    width="300px">
-            </a>
-        </div>
-        <nav class="navbar navbar-expand-lg bg-body-black">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img src="./multimedia/imagenes/favicon.png" alt="logonav"
-                        class="logonav"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./html/mundocafe.html">EL MUNDO DEL CAFÉ</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./html/productos.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Nuestros Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./html/productos.html">Cafés</a></li>
-                                <li><a class="dropdown-item" href="./html/productos.html">Cafeteras</a></li>
-                                <li><a class="dropdown-item" href="./html/productos.html">Accesorios</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./html/nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./html/contacto.html">CONTACTANOS</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark btn-light btn-sm" type="submit">BUSCAR</button>
-                    </form>
+        <section class="banner">
+            <div class="bannerContenido">
+                <div class="bannerTexto">
+                    <h2>Primero...el café</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
+                <div class="bannerBoton">
+                    <a href="./index.html" class="button">INICIO</a>
+                    <a href="./html/productos.html" class="button">PRODUCTOS</a>
+                    <a href="#abajo" class="button">SEGUINOS</a>
+                </div>
+
             </div>
-        </nav>
+        </section>
+        <div class="menuh">
+            <nav class="navbar navbar-expand-lg bg-body-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="./multimedia/imagenes/favicon.png"
+                            alt="logonav" class="logonav"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/mundocafe.html">EL MUNDO DEL CAFÉ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./html/productos.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nuestros Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./html/productos.html">Cafés</a></li>
+                                    <li><a class="dropdown-item" href="./html/productos.html">Cafeteras</a></li>
+                                    <li><a class="dropdown-item" href="./html/productos.html">Accesorios</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/contacto.html">CONTACTANOS</a>
+                            </li>
+                            <form class="d-flex" role="search">
+                                <input class="form-control m-auto" placeholder="" aria-label="Search">
+                                <button class="btn btn-outline-dark btn-light btn-sm m-3" style="color: grey;"
+                                    type="submit">BUSCAR</button>
+                            </form>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
 
     </header>
     <main>
