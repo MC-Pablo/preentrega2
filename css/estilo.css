@@ -19,7 +19,6 @@
 @media screen and (max-width: 768px) {
   .sectionNosotros {
     margin: auto;
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
     grid-template-areas: "text" "text" "img1" "text1" "img2" "text2" "img3" "text3" "suc";
@@ -41,7 +40,6 @@
 
 body {
   background-color: #e4c4ad;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
   line-height: 1.6;
 }
@@ -59,6 +57,7 @@ h1 {
   margin: 20px 0px;
   font-size: 25px;
   font-weight: bold;
+  font-family: "Playfair Display", serif;
 }
 
 h2 {
@@ -68,6 +67,7 @@ h2 {
   font-size: 20px;
   font-weight: bold;
   text-decoration: underline;
+  font-family: "Playfair Display", serif;
 }
 
 p {
@@ -76,6 +76,7 @@ p {
   display: auto;
   text-decoration: solid black;
   font-weight: 600;
+  font-family: "Mulish", sans-serif;
 }
 
 main {
@@ -161,7 +162,7 @@ header {
   text-align: center;
   justify-content: center;
   padding: 10px;
-  margin: 0;
+  margin: 10px;
 }
 
 .banner {
@@ -189,6 +190,7 @@ header {
   padding: 20px;
 }
 .bannerTexto h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: 700;
   color: #e2e9eb;
@@ -204,6 +206,7 @@ header {
   position: relative;
 }
 .bannerTexto p {
+  font-family: "Montserrat", sans-serif;
   color: #e2e9eb;
   font-size: 4rem;
   text-transform: uppercase;
@@ -226,14 +229,15 @@ header {
   padding: 10px;
 }
 
-.button {
-  color: #e2e9eb;
+.button1 {
+  font-family: "Montserrat", sans-serif;
+  color: #f7f7f7;
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: underline;
-  font-weight: 700;
-  margin: 10px;
-  padding: 10px;
+  font-weight: 900;
+  margin: 5px;
+  padding: 5px;
 }
 
 .nav-item {
@@ -399,7 +403,7 @@ aside {
 
 .container {
   display: grid;
-  grid-template-rows: auto 3fr auto auto;
+  grid-template-rows: auto 2fr auto auto;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "headerNos headerNos" "aside mainNos" "sectionNos sectionNos" "footerNos footerNos";
 }
@@ -442,6 +446,52 @@ iframe {
   margin: 1px;
   padding: 1px;
   justify-content: center;
+}
+
+.divTexto {
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 150px;
+  justify-self: center;
+}
+
+.divTexto h1 {
+  font-family: "Playfair Display", serif;
+}
+
+.divTexto p {
+  font-family: "Mulish", sans-serif;
+}
+
+.carouselGrid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "gridTitulo gridTitulo" "carousel1 textocarousel1";
+}
+
+.carouselCafe1 {
+  grid-area: carousel1;
+  width: auto;
+  height: auto;
+}
+
+.indexTexto1 {
+  grid-area: textocarousel1;
+  justify-self: center;
+  height: auto;
+}
+
+.grid1Titulo {
+  grid-area: gridTitulo;
+  justify-self: center;
+}
+
+.imgCarouselCafe {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
 }
 
 /*# sourceMappingURL=estilo.css.map */

@@ -7,7 +7,6 @@
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
-
 }
 
 .row {
@@ -15,4 +14,52 @@
     margin: 1px;
     padding: 1px;
     justify-content: center;
+}
+
+.divTexto {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 150px;
+    justify-self: center;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+    }
+
+    p {
+        font-family: 'Mulish', sans-serif;
+    }
+}
+
+.carouselGrid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "gridTitulo gridTitulo"
+        "carousel1 textocarousel1";
+}
+
+.carouselCafe1 {
+    grid-area: carousel1;
+    width: auto;
+    height: auto;
+}
+
+.indexTexto1 {
+    grid-area: textocarousel1;
+    justify-self: center;
+    height: auto;
+}
+
+.grid1Titulo {
+    grid-area: gridTitulo;
+    justify-self: center;
+}
+
+.imgCarouselCafe {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
 }
