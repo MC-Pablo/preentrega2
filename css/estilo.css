@@ -1,4 +1,54 @@
+/* INICIO*/
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@media screen and (max-width: 768px) {
+  .carouselGrid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "gridTitulo" "carousel1" "textocarousel1";
+  }
+}
+@media screen and (max-width: 576px) {
+  .carouselGrid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "gridTitulo" "carousel1" "textocarousel1";
+  }
+}
+@media screen and (max-width: 768px) {
+  .carouselGrid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "carousel2" "textocarousel2";
+  }
+}
+@media screen and (max-width: 576px) {
+  .carouselGrid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "carousel2" "textocarousel2";
+  }
+}
+@media screen and (max-width: 768px) {
+  .carouselGrid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "carousel3" "textocarousel3";
+  }
+}
+@media screen and (max-width: 576px) {
+  .carouselGrid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "carousel3" "textocarousel3";
+  }
+}
+/* NOSOTROS */
 @media screen and (max-width: 768px) {
   .container {
     margin: auto;
@@ -39,7 +89,7 @@
 }
 
 body {
-  background-color: #e4c4ad;
+  background-color: rgb(227, 197, 176);
   text-align: center;
   line-height: 1.6;
 }
@@ -49,6 +99,11 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   color: black;
+}
+a :hover {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
 }
 
 h1 {
@@ -66,32 +121,18 @@ h2 {
   margin: 20px 0px;
   font-size: 20px;
   font-weight: bold;
-  text-decoration: underline;
   font-family: "Playfair Display", serif;
 }
 
 p {
-  margin: 10px;
-  padding: 10px;
-  display: auto;
   text-decoration: solid black;
-  font-weight: 600;
+  font-weight: 200;
   font-family: "Mulish", sans-serif;
+  line-height: 2rem;
 }
 
 main {
   margin: auto;
-}
-
-.navegador2 ul li {
-  width: auto;
-  list-style: none;
-  display: inline-block;
-  margin: 5px 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 10px;
 }
 
 .imgProd {
@@ -228,38 +269,44 @@ header {
   margin: 10px;
   padding: 10px;
 }
+.bannerBoton :hover {
+  background-color: rgb(241, 224, 212);
+  color: black;
+  border-radius: 15px;
+}
 
 .button1 {
   font-family: "Montserrat", sans-serif;
   color: #f7f7f7;
   font-size: 1rem;
   text-transform: uppercase;
-  text-decoration: underline;
   font-weight: 900;
   margin: 5px;
   padding: 5px;
 }
 
-.nav-item {
+.menu .nav-item {
   font-weight: 900;
   text-decoration: solid;
   text-align: center;
   margin: 10px;
 }
-
-.d-flex {
+.menu .nav-item :hover {
+  background-color: rgb(241, 224, 212);
+  color: black;
+  border-radius: 15px;
+}
+.menu .d-flex {
   margin-left: 70px;
   padding: 0px;
   align-items: end;
 }
-
-.Logo {
+.menu .Logo {
   width: 140px;
   height: 140px;
   border-radius: 300%;
 }
-
-.logonav {
+.menu .logonav {
   width: 70px;
   height: 70px;
   margin: 0px;
@@ -430,15 +477,10 @@ iframe {
   border-radius: 10px;
 }
 
-.imgProducto1,
-.imgProducto2,
-.imgProducto3 {
-  margin: 2px;
-  padding: 2px;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 20px;
+.imgCafe {
+  border-radius: 10%;
+  width: 400px;
+  height: 400px;
 }
 
 .row {
@@ -451,14 +493,11 @@ iframe {
 .divTexto {
   margin-left: 250px;
   margin-right: 250px;
-  margin-bottom: 150px;
   justify-self: center;
 }
-
 .divTexto h1 {
   font-family: "Playfair Display", serif;
 }
-
 .divTexto p {
   font-family: "Mulish", sans-serif;
 }
@@ -481,17 +520,91 @@ iframe {
   justify-self: center;
   height: auto;
 }
+.indexTexto1 p {
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2.5rem;
+}
 
 .grid1Titulo {
   grid-area: gridTitulo;
   justify-self: center;
 }
 
-.imgCarouselCafe {
+.carouselGrid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "textocarousel2 carousel2";
+}
+
+.carouselAccesorios {
+  grid-area: carousel2;
+  width: auto;
+  height: auto;
+}
+
+.indexTexto2 {
+  grid-area: textocarousel2;
+  justify-self: center;
+  height: auto;
+}
+.indexTexto2 p {
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2.5rem;
+}
+
+.carouselGrid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "carousel3 textocarousel3 ";
+}
+
+.carouselCafeteras {
+  grid-area: carousel3;
+  width: auto;
+  height: auto;
+}
+
+.indexTexto3 {
+  grid-area: textocarousel3;
+  justify-self: center;
+  height: auto;
+}
+.indexTexto3 p {
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2.5rem;
+}
+
+.divImgDestacadas {
+  margin: 10px;
+  padding: 10px;
+}
+
+.boxImgDestacadas {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin: 0px;
+  padding: 20px;
+}
+.boxImgDestacadas a {
+  display: block;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.boxImgDestacadas img {
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  width: 400px;
-  height: 400px;
+  transition: 0.5s;
+}
+.boxImgDestacadas img:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=estilo.css.map */

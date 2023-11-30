@@ -1,3 +1,74 @@
+/* INICIO*/
+
+@media screen and (max-width:768px) {
+    .carouselGrid1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas:
+            "gridTitulo"
+            "carousel1"
+            "textocarousel1";
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carouselGrid1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas:
+            "gridTitulo"
+            "carousel1"
+            "textocarousel1";
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carouselGrid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "carousel2"
+            "textocarousel2";
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carouselGrid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "carousel2"
+            "textocarousel2";
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carouselGrid3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "carousel3"
+            "textocarousel3";
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carouselGrid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "carousel3"
+            "textocarousel3";
+    }
+}
+
+/* NOSOTROS */
 @media screen and (max-width:768px) {
     .container {
         margin: auto;

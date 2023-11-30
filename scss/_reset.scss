@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e4c4ad;
+    background-color: $main-color;
     text-align: center;
     line-height: 1.6;
 }
@@ -15,6 +15,12 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     color: black;
+
+    :hover {
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+    }
 }
 
 h1 {
@@ -32,30 +38,17 @@ h2 {
     margin: 20px 0px;
     font-size: 20px;
     font-weight: bold;
-    text-decoration: underline;
+
     font-family: 'Playfair Display', serif;
 }
 
 p {
-    margin: 10px;
-    padding: 10px;
-    display: auto;
     text-decoration: solid black;
-    font-weight: 600;
+    font-weight: 200;
     font-family: 'Mulish', sans-serif;
+    line-height: 2rem;
 }
 
 main {
     margin: auto;
-}
-
-.navegador2 ul li {
-    width: auto;
-    list-style: none;
-    display: inline-block;
-    margin: 5px 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 10px;
 }
