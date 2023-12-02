@@ -25,6 +25,7 @@
     margin-left: 250px;
     margin-right: 250px;
     justify-self: center;
+    grid-area: divTexto;
 
     h1 {
         font-family: 'Playfair Display', serif;
@@ -32,16 +33,24 @@
 
     p {
         font-family: 'Mulish', sans-serif;
+        height: auto;
     }
 }
 
 .carouselGrid1 {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto auto;
     grid-template-areas:
+        "divTexto  divTexto"
         "gridTitulo gridTitulo"
         "carousel1 textocarousel1";
+}
+
+.grid1Titulo {
+    grid-area: gridTitulo;
+    justify-self: center;
 }
 
 .carouselCafe1 {
@@ -61,10 +70,7 @@
 
 }
 
-.grid1Titulo {
-    grid-area: gridTitulo;
-    justify-self: center;
-}
+
 
 .carouselGrid2 {
     display: grid;
@@ -150,4 +156,80 @@
     }
 
 
+}
+
+/* MEDIAS QUERYS */
+
+@media screen and (max-width:768px) {
+    .carouselGrid1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas:
+            "divTexto"
+            "gridTitulo"
+            "carousel1"
+            "textocarousel1";
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carouselGrid1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas:
+            "gridTitulo"
+            "carousel1"
+            "textocarousel1";
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carouselGrid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "carousel2"
+            "textocarousel2";
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carouselGrid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "carousel2"
+            "textocarousel2";
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carouselGrid3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "carousel3"
+            "textocarousel3";
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carouselGrid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "carousel3"
+            "textocarousel3";
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bannerTexto {
+        font-size: 1rem;
+    }
 }

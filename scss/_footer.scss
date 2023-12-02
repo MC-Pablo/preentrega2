@@ -1,15 +1,59 @@
-footer {
-    margin: 20px;
-    padding: 20px;
-    border-top: 1px solid black;
-    text-align: center;
+@mixin iconosFooter {
+    margin: 3px;
+    padding: 5px;
+    width: 45px;
+    height: 35px;
+    border-radius: 20px;
+
 }
 
-.imgFooter {
+footer {
+    width: 100%;
+    margin-top: 40px;
+    border-top: 1px solid gray;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+    }
+
+    h3 {
+        font-family: 'Playfair Display', serif;
+        margin-top: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    h6 {
+        font-weight: 900;
+    }
+
+    p {
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+
+
+}
+
+.iconosRedes {
     margin: 3px;
-    padding: 3px;
+    padding: 5px;
     width: 50px;
     height: 50px;
-    object-fit: cover;
-    border-radius: 100%;
+    border-radius: 20px;
+
+}
+
+.iconosPagos {
+    @include iconosFooter;
+}
+
+.iconoEnvios {
+    @include iconosFooter;
+
 }

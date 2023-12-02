@@ -1,87 +1,5 @@
 /* INICIO*/
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-@media screen and (max-width: 768px) {
-  .carouselGrid1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto;
-    grid-template-areas: "gridTitulo" "carousel1" "textocarousel1";
-  }
-}
-@media screen and (max-width: 576px) {
-  .carouselGrid1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto;
-    grid-template-areas: "gridTitulo" "carousel1" "textocarousel1";
-  }
-}
-@media screen and (max-width: 768px) {
-  .carouselGrid2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "carousel2" "textocarousel2";
-  }
-}
-@media screen and (max-width: 576px) {
-  .carouselGrid2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "carousel2" "textocarousel2";
-  }
-}
-@media screen and (max-width: 768px) {
-  .carouselGrid3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "carousel3" "textocarousel3";
-  }
-}
-@media screen and (max-width: 576px) {
-  .carouselGrid3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "carousel3" "textocarousel3";
-  }
-}
-/* NOSOTROS */
-@media screen and (max-width: 768px) {
-  .container {
-    margin: auto;
-    display: grid;
-    grid-template-rows: auto 0.5fr 0.5fr auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: "headerNos" "aside" "mainNos" "sectionNos" "footerNos";
-  }
-}
-@media screen and (max-width: 576px) {
-  .container {
-    margin: auto;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: "headerNos" "aside" "mainNos" "sectionNos" "footerNos";
-  }
-}
-@media screen and (max-width: 768px) {
-  .sectionNosotros {
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
-    grid-template-areas: "text" "text" "img1" "text1" "img2" "text2" "img3" "text3" "suc";
-  }
-}
-@media screen and (max-width: 576px) {
-  .sectionNosotros {
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto auto auto auto auto;
-    grid-template-areas: "text" "text" "img1" "text1" "img2" "text2" "img3" "text3";
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -184,19 +102,53 @@ textarea {
 }
 
 footer {
-  margin: 20px;
-  padding: 20px;
-  border-top: 1px solid black;
+  width: 100%;
+  margin-top: 40px;
+  border-top: 1px solid gray;
   text-align: center;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+}
+footer h2 {
+  font-family: "Playfair Display", serif;
+}
+footer h3 {
+  font-family: "Playfair Display", serif;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 900;
+}
+footer h6 {
+  font-weight: 900;
+}
+footer p {
+  text-decoration: none;
+  font-weight: 400;
 }
 
-.imgFooter {
+.iconosRedes {
   margin: 3px;
-  padding: 3px;
+  padding: 5px;
   width: 50px;
   height: 50px;
-  object-fit: cover;
-  border-radius: 100%;
+  border-radius: 20px;
+}
+
+.iconosPagos {
+  margin: 3px;
+  padding: 5px;
+  width: 45px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.iconoEnvios {
+  margin: 3px;
+  padding: 5px;
+  width: 45px;
+  height: 35px;
+  border-radius: 20px;
 }
 
 header {
@@ -210,7 +162,6 @@ header {
   background-image: url(../multimedia/imagenes/headerimg/bg32.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,9 +171,12 @@ header {
 
 .bannerContenido {
   z-index: 0;
+  position: absolute;
 }
-
-.bannerTexto {
+.bannerContenido img {
+  width: 100%;
+}
+.bannerContenido .bannerTexto {
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -230,7 +184,7 @@ header {
   align-items: center;
   padding: 20px;
 }
-.bannerTexto h2 {
+.bannerContenido .bannerTexto h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: 700;
@@ -246,10 +200,10 @@ header {
   animation: shine 7s linear infinite;
   position: relative;
 }
-.bannerTexto p {
+.bannerContenido .bannerTexto p {
   font-family: "Montserrat", sans-serif;
   color: #e2e9eb;
-  font-size: 4rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
@@ -313,146 +267,126 @@ header {
   padding: 0px;
 }
 
-.imgNosotros1 {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 30px;
-  align-self: center;
+.portada {
+  display: flex;
 }
 
 aside {
   width: 100%;
-  padding: 0.5rem;
+  padding: 10px;
+  margin: 10px 0px 0px 100px;
   display: flex;
   flex-direction: column;
   grid-area: aside;
   text-align: center;
 }
+aside p {
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.5rem;
+  height: auto;
+}
+aside .imgNosotros1 {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  align-self: center;
+}
 
-.sucursales {
-  margin: 5px;
-  padding: 10px;
-  grid-area: suc;
+.textoNos {
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2.5rem;
+  text-align: center;
+  height: auto;
 }
 
 .text0 {
-  width: 90%;
-  margin: 5px;
-  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2.5rem;
+  text-align: center;
   grid-area: text;
 }
 
 .imgNos1 {
-  width: 90%;
-  display: flex;
-  margin: 5px;
-  padding: 10px;
-  float: left;
   grid-area: img1;
 }
 
 .textBox1 {
   grid-area: text1;
-  margin: 5px;
-  padding: 10px;
-}
-.textBox1 h3 {
-  margin-right: 15px;
-  font-weight: bolder;
+  margin-left: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2.5rem;
   text-align: center;
 }
-.textBox1 p {
-  margin-right: 15px;
+.textBox1 h3 {
+  font-weight: bolder;
+  font-style: italic;
   text-align: center;
 }
 
 .imgNos2 {
-  width: 90%;
-  display: flex;
-  margin: 5px;
-  padding: 20px;
-  float: right;
+  margin-right: 100px;
   grid-area: img2;
 }
 
 .textBox2 {
   grid-area: text2;
-  margin: 5px;
-  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2.5rem;
   text-align: center;
 }
 .textBox2 h3 {
-  margin: 5px;
-  padding: 10px;
   font-weight: bolder;
-  text-align: center;
-}
-.textBox2 p {
-  margin: 5px;
-  padding: 10px;
+  font-style: italic;
   text-align: center;
 }
 
 .imgNos3 {
-  width: 90%;
-  display: flex;
-  margin: 5px;
-  padding: 20px;
-  float: right;
+  margin-left: 100px;
   grid-area: img3;
 }
 
 .textBox3 {
   grid-area: text3;
-  margin: 5px;
-  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2.5rem;
   text-align: center;
 }
 .textBox3 h3 {
-  margin: 5px;
-  padding: 10px;
   font-weight: bolder;
-  text-align: center;
-}
-.textBox3 p {
-  margin: 5px;
-  padding: 10px;
+  font-style: italic;
   text-align: center;
 }
 
 .imgNosotros2,
 .imgNosotros3,
 .imgNosotros4 {
-  width: 350px;
-  height: 350px;
-  margin: auto;
-  padding: 0%;
+  margin: 20px;
+  width: 500px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
-.headerNosotros {
-  grid-area: headerNos;
+.sucursales {
+  margin: 5px;
+  padding: 10px;
+  grid-area: suc;
+  display: flex;
 }
-
-.mainNosotros {
-  grid-area: mainNos;
+.sucursales .mapa {
+  flex-direction: column;
+  padding: 20px;
 }
-
-.footerNosotros {
-  grid-area: footerNos;
-}
-
-.sectionNosotros {
-  grid-area: sectionNos;
-}
-
-.container {
-  display: grid;
-  grid-template-rows: auto 2fr auto auto;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "headerNos headerNos" "aside mainNos" "sectionNos sectionNos" "footerNos footerNos";
+.sucursales .contacto {
+  flex-direction: column;
+  padding: 20px;
 }
 
 .sectionNosotros {
@@ -464,6 +398,32 @@ aside {
   grid-template-areas: "text text" "img1 text1" "text2 img2" "img3 text3" "suc suc";
 }
 
+/* MEDIAS QUERYS */
+@media screen and (max-width: 768px) {
+  .portada {
+    display: block;
+  }
+  .portada aside {
+    margin: auto;
+    padding: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionNosotros {
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
+    grid-template-areas: "text" "text" "img1" "text1" "img2" "text2" "img3" "text3" "suc";
+  }
+}
+@media screen and (max-width: 576px) {
+  .sectionNosotros {
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto;
+    grid-template-areas: "text" "text" "img1" "text1" "img2" "text2" "img3" "text3";
+  }
+}
 .imgCafe {
   width: 400px;
   height: 400px;
@@ -494,19 +454,26 @@ iframe {
   margin-left: 250px;
   margin-right: 250px;
   justify-self: center;
+  grid-area: divTexto;
 }
 .divTexto h1 {
   font-family: "Playfair Display", serif;
 }
 .divTexto p {
   font-family: "Mulish", sans-serif;
+  height: auto;
 }
 
 .carouselGrid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto;
-  grid-template-areas: "gridTitulo gridTitulo" "carousel1 textocarousel1";
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas: "divTexto  divTexto" "gridTitulo gridTitulo" "carousel1 textocarousel1";
+}
+
+.grid1Titulo {
+  grid-area: gridTitulo;
+  justify-self: center;
 }
 
 .carouselCafe1 {
@@ -524,11 +491,6 @@ iframe {
   margin-left: 100px;
   margin-right: 100px;
   line-height: 2.5rem;
-}
-
-.grid1Titulo {
-  grid-area: gridTitulo;
-  justify-self: center;
 }
 
 .carouselGrid2 {
@@ -605,6 +567,60 @@ iframe {
 }
 .boxImgDestacadas img:hover {
   transform: scale(1.2);
+}
+
+/* MEDIAS QUERYS */
+@media screen and (max-width: 768px) {
+  .carouselGrid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-template-areas: "divTexto" "gridTitulo" "carousel1" "textocarousel1";
+  }
+}
+@media screen and (max-width: 576px) {
+  .carouselGrid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "gridTitulo" "carousel1" "textocarousel1";
+  }
+}
+@media screen and (max-width: 768px) {
+  .carouselGrid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "carousel2" "textocarousel2";
+  }
+}
+@media screen and (max-width: 576px) {
+  .carouselGrid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "carousel2" "textocarousel2";
+  }
+}
+@media screen and (max-width: 768px) {
+  .carouselGrid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "carousel3" "textocarousel3";
+  }
+}
+@media screen and (max-width: 576px) {
+  .carouselGrid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "carousel3" "textocarousel3";
+  }
+}
+@media screen and (max-width: 768px) {
+  .bannerTexto {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
