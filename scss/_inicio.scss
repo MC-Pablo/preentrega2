@@ -21,56 +21,54 @@
     justify-content: center;
 }
 
-.divTexto {
-    margin-left: 250px;
-    margin-right: 250px;
-    justify-self: center;
-    grid-area: divTexto;
-
-    h1 {
-        font-family: 'Playfair Display', serif;
-    }
-
-    p {
-        font-family: 'Mulish', sans-serif;
-        height: auto;
-    }
-}
-
 .carouselGrid1 {
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto auto;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "divTexto  divTexto"
         "gridTitulo gridTitulo"
         "carousel1 textocarousel1";
-}
 
-.grid1Titulo {
-    grid-area: gridTitulo;
-    justify-self: center;
-}
+    .divTexto {
+        margin-left: 250px;
+        margin-right: 250px;
+        grid-area: divTexto;
 
-.carouselCafe1 {
-    grid-area: carousel1;
-    width: auto;
-    height: auto;
-}
+        h1 {
+            font-family: 'Playfair Display', serif;
+        }
 
-.indexTexto1 {
-    grid-area: textocarousel1;
-    justify-self: center;
-    height: auto;
+        p {
+            font-family: 'Mulish', sans-serif;
+            line-height: 2.5rem;
+        }
+    }
 
-    p {
-        @include textosIndex;
+    .grid1Titulo {
+        grid-area: gridTitulo;
+        justify-self: center;
+    }
+
+    .carouselCafe1 {
+        grid-area: carousel1;
+        width: auto;
+        height: auto;
+    }
+
+    .indexTexto1 {
+        grid-area: textocarousel1;
+        justify-self: center;
+        height: auto;
+
+        p {
+            @include textosIndex;
+        }
+
     }
 
 }
-
-
 
 .carouselGrid2 {
     display: grid;
@@ -79,21 +77,21 @@
     grid-template-areas:
 
         "textocarousel2 carousel2";
-}
 
-.carouselAccesorios {
-    grid-area: carousel2;
-    width: auto;
-    height: auto;
-}
+    .carouselAccesorios {
+        grid-area: carousel2;
+        width: auto;
+        height: auto;
+    }
 
-.indexTexto2 {
-    grid-area: textocarousel2;
-    justify-self: center;
-    height: auto;
+    .indexTexto2 {
+        grid-area: textocarousel2;
+        justify-self: center;
+        height: auto;
 
-    p {
-        @include textosIndex;
+        p {
+            @include textosIndex;
+        }
     }
 }
 
@@ -104,23 +102,25 @@
     grid-template-areas:
 
         "carousel3 textocarousel3 ";
-}
 
-.carouselCafeteras {
-    grid-area: carousel3;
-    width: auto;
-    height: auto;
-}
-
-.indexTexto3 {
-    grid-area: textocarousel3;
-    justify-self: center;
-    height: auto;
-
-    p {
-        @include textosIndex;
+    .carouselCafeteras {
+        grid-area: carousel3;
+        width: auto;
+        height: auto;
     }
+
+    .indexTexto3 {
+        grid-area: textocarousel3;
+        justify-self: center;
+        height: auto;
+
+        p {
+            @include textosIndex;
+        }
+    }
+
 }
+
 
 .divImgDestacadas {
 
@@ -158,10 +158,12 @@
 
 }
 
-/* MEDIAS QUERYS */
+/* MEDIAS QUERY */
 
 @media screen and (max-width:768px) {
     .carouselGrid1 {
+        width: auto;
+        height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto auto auto;
         grid-template-areas:
@@ -174,7 +176,8 @@
 
 @media screen and (max-width:576px) {
     .carouselGrid1 {
-        display: grid;
+        width: auto;
+        height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto auto;
         grid-template-areas:
@@ -186,7 +189,9 @@
 
 @media screen and (max-width:768px) {
     .carouselGrid2 {
-        display: grid;
+        width: auto;
+        height: auto;
+        align-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
         grid-template-areas:
@@ -197,7 +202,8 @@
 
 @media screen and (max-width:576px) {
     .carouselGrid2 {
-        display: grid;
+        width: auto;
+        height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
         grid-template-areas:
