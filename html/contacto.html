@@ -85,7 +85,7 @@
         </div>
     </header>
     <main>
-        <div>
+        <div class="infoContacto">
             <h1>CONTACTO</h1>
             <p>TEL: (261) 4223316 / PrimeroElCafe@GMAIL.COM</p>
             <p>LAS HERAS 389, GODOY CRUZ - M5501 - MENDOZA - ARGENTINA</p>
@@ -97,28 +97,31 @@
                 SAB 9:00 - 13:00H</p>
         </div>
         <form>
-            <div class="labelNombre">
-                <label for="name">NOMBRE:</label>
-                <input type="text" name="name" required>
-            </div>
-            <div class="labelEmail">
-                <label for="email">EMAIL:</label>
-                <input type="text" name="email" required>
+            <div class="labels1">
+                <div class="labelNombre">
+                    <label for="name">NOMBRE:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="labelEmail">
+                    <label for="email">EMAIL:</label>
+                    <input type="text" name="email" required>
 
+                </div>
+                <div class="labelTel">
+                    <label for="phone"> TELÉFONO:</label>
+                    <input type="phone" name="phone">
+                </div>
             </div>
-            <div class="labelTel">
-                <label for="phone"> TELÉFONO:</label>
-                <input type="phone" name="phone">
+            <div class="labelMsj">
+                <div class="labelMensaje">
+                    <label for="message">MENSAJE:</label>
+                    <textarea name="msj" id="mensaje" cols="30" rows="10" required></textarea>
+                </div>
+                <div>
+                    <input class="botonF1" type="submit" value="Enviar Datos">
+                    <input class="botonF1" type="submit" value="Borrar">
+                </div>
             </div>
-            <div class="labelMensaje">
-                <label for="message">MENSAJE:</label>
-                <textarea name="msj" id="mensaje" cols="30" rows="10" required></textarea>
-            </div>
-            <div>
-                <input class="botonF1" type="submit" value="Enviar Datos">
-                <input class="botonF1" type="submit" value="Borrar">
-            </div>
-
         </form>
     </main>
     <footer class="text-center text-lg-start bg-body-none text-muted" id="abajo">
