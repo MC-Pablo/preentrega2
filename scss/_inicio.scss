@@ -192,19 +192,33 @@
 
 @media screen and (max-width:576px) {
     .carouselGrid1 {
+        flex-direction: column;
         width: auto;
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto auto;
+        grid-template-rows: 1fr auto auto auto;
         grid-template-areas:
+            "divTexto"
             "gridTitulo"
             "carousel1"
             "textocarousel1";
+
+        .divTexto,
+        .indexTexto1 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .imgCafe {
+            width: 80vw;
+
+        }
     }
 }
 
 @media screen and (max-width:768px) {
     .carouselGrid2 {
+        flex-direction: column;
         width: auto;
         height: auto;
         align-content: center;
@@ -218,6 +232,7 @@
 
 @media screen and (max-width:576px) {
     .carouselGrid2 {
+        flex-direction: column;
         width: auto;
         height: auto;
         grid-template-columns: 1fr;
@@ -230,6 +245,7 @@
 
 @media screen and (max-width:768px) {
     .carouselGrid3 {
+        flex-direction: column;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
@@ -241,8 +257,9 @@
 
 @media screen and (max-width:576px) {
     .carouselGrid3 {
+        flex-direction: column;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
         grid-template-areas:
             "carousel3"
