@@ -3,7 +3,6 @@ header {
     justify-content: center;
     padding: 10px;
     margin: 10px;
-
 }
 
 .banner {
@@ -15,6 +14,14 @@ header {
     align-items: center;
     width: 100%;
     height: calc(100vh - 100px);
+
+    @media (max-width: 768px) {
+        width: auto;
+    }
+
+    @media (max-width: 576px) {
+        width: auto;
+    }
 }
 
 .bannerContenido {
@@ -23,6 +30,14 @@ header {
 
     img {
         width: 100%;
+
+        @media (max-width: 768px) {
+            width: auto;
+        }
+
+        @media (max-width: 576px) {
+            width: auto;
+        }
     }
 
     .bannerTexto {
@@ -49,7 +64,9 @@ header {
             animation: shine 7s linear infinite;
             position: relative;
 
-
+            @media (max-width: 768px) {
+                font-size: 2rem;
+            }
         }
 
         p {
@@ -61,6 +78,9 @@ header {
             margin-bottom: 20px;
             text-align: center;
 
+            @media (max-width: 768px) {
+                font-size: 1.5rem;
+            }
         }
     }
 }
@@ -80,6 +100,10 @@ header {
     margin: 10px;
     padding: 10px;
 
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+
     :hover {
         background-color: $hover-bg-color;
         color: $hover-color;
@@ -97,9 +121,12 @@ header {
     margin: 5px;
     padding: 5px;
 
-
+    @media (max-width: 768px) {
+        font-size: 0.8rem;
+    }
 
 }
+
 
 .menu {
 

@@ -329,6 +329,16 @@ header {
   width: 100%;
   height: calc(100vh - 100px);
 }
+@media (max-width: 768px) {
+  .banner {
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  .banner {
+    width: auto;
+  }
+}
 
 .bannerContenido {
   z-index: 0;
@@ -336,6 +346,16 @@ header {
 }
 .bannerContenido img {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .bannerContenido img {
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  .bannerContenido img {
+    width: auto;
+  }
 }
 .bannerContenido .bannerTexto {
   z-index: 1;
@@ -361,6 +381,11 @@ header {
   animation: shine 7s linear infinite;
   position: relative;
 }
+@media (max-width: 768px) {
+  .bannerContenido .bannerTexto h2 {
+    font-size: 2rem;
+  }
+}
 .bannerContenido .bannerTexto p {
   font-family: "Montserrat", sans-serif;
   color: #e2e9eb;
@@ -369,6 +394,11 @@ header {
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .bannerContenido .bannerTexto p {
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes shine {
@@ -384,6 +414,11 @@ header {
   margin: 10px;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  .bannerBoton {
+    margin-top: 20px;
+  }
+}
 .bannerBoton :hover {
   background-color: rgb(241, 224, 212);
   color: black;
@@ -398,6 +433,11 @@ header {
   font-weight: 900;
   margin: 5px;
   padding: 5px;
+}
+@media (max-width: 768px) {
+  .button1 {
+    font-size: 0.8rem;
+  }
 }
 
 .menu .nav-item {
@@ -598,6 +638,39 @@ iframe {
   border-radius: 10px;
 }
 
+.textoMundo1,
+.tiposCafe1,
+.tiposCafe2,
+.tiposCafe3 {
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.textoMundo1 h1,
+.textoMundo1 h2,
+.textoMundo1 h3,
+.tiposCafe1 h1,
+.tiposCafe1 h2,
+.tiposCafe1 h3,
+.tiposCafe2 h1,
+.tiposCafe2 h2,
+.tiposCafe2 h3,
+.tiposCafe3 h1,
+.tiposCafe3 h2,
+.tiposCafe3 h3 {
+  font-family: "Playfair Display", serif;
+}
+.textoMundo1 p,
+.tiposCafe1 p,
+.tiposCafe2 p,
+.tiposCafe3 p {
+  font-family: "Mulish", sans-serif;
+  line-height: 2.5rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .imgCafe {
   border-radius: 10%;
   width: 400px;
@@ -613,7 +686,7 @@ iframe {
 
 .carouselGrid1 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "divTexto  divTexto" "gridTitulo gridTitulo" "carousel1 textocarousel1";
 }
@@ -716,6 +789,7 @@ iframe {
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+  overflow: cover;
 }
 .boxImgDestacadas img:hover {
   transform: scale(1.2);
@@ -724,11 +798,20 @@ iframe {
 /* MEDIAS QUERY */
 @media screen and (max-width: 768px) {
   .carouselGrid1 {
+    flex-direction: column;
     width: auto;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto;
     grid-template-areas: "divTexto" "gridTitulo" "carousel1" "textocarousel1";
+  }
+  .carouselGrid1 .divTexto,
+  .carouselGrid1 .indexTexto1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carouselGrid1 .imgCafe {
+    width: 80vw;
   }
 }
 @media screen and (max-width: 576px) {

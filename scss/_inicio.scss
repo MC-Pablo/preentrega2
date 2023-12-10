@@ -24,7 +24,7 @@
 .carouselGrid1 {
 
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
         "divTexto  divTexto"
@@ -45,6 +45,7 @@
             line-height: 2.5rem;
         }
     }
+
 
     .grid1Titulo {
         grid-area: gridTitulo;
@@ -149,6 +150,7 @@
         height: 100%;
         object-fit: cover;
         transition: 0.5s;
+        overflow: cover;
     }
 
     img:hover {
@@ -162,6 +164,7 @@
 
 @media screen and (max-width:768px) {
     .carouselGrid1 {
+        flex-direction: column;
         width: auto;
         height: auto;
         grid-template-columns: 1fr;
@@ -171,8 +174,21 @@
             "gridTitulo"
             "carousel1"
             "textocarousel1";
+
+        .divTexto,
+        .indexTexto1 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .imgCafe {
+            width: 80vw;
+
+        }
     }
+
 }
+
 
 @media screen and (max-width:576px) {
     .carouselGrid1 {

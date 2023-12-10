@@ -1,3 +1,8 @@
+@mixin mundoCafeTextos {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
 .imgCafe {
     width: 400px;
     height: 400px;
@@ -9,4 +14,27 @@ iframe {
     display: block;
     margin: auto;
     border-radius: 10px;
+}
+
+.textoMundo1,
+.tiposCafe1,
+.tiposCafe2,
+.tiposCafe3 {
+    @include mundoCafeTextos;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Playfair Display', serif;
+    }
+
+    p {
+        font-family: 'Mulish', sans-serif;
+        line-height: 2.5rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
