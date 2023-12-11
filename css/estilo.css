@@ -343,12 +343,12 @@ header {
   max-width: 100%;
   height: calc(100vh - 100px);
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .banner {
     width: auto;
   }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .banner {
     width: auto;
   }
@@ -361,12 +361,12 @@ header {
 .bannerContenido img {
   width: 100%;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .bannerContenido img {
     max-width: 100%;
   }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .bannerContenido img {
     max-width: 100%;
   }
@@ -395,9 +395,14 @@ header {
   animation: shine 7s linear infinite;
   position: relative;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .bannerContenido .bannerTexto h2 {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bannerContenido .bannerTexto h2 {
+    font-size: 1rem;
   }
 }
 .bannerContenido .bannerTexto p {
@@ -409,9 +414,14 @@ header {
   margin-bottom: 20px;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .bannerContenido .bannerTexto p {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bannerContenido .bannerTexto p {
+    font-size: 1rem;
   }
 }
 
@@ -428,9 +438,14 @@ header {
   margin: 10px;
   padding: 10px;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .bannerBoton {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bannerBoton {
+    margin-top: 15px;
   }
 }
 .bannerBoton :hover {
@@ -448,9 +463,14 @@ header {
   margin: 5px;
   padding: 5px;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .button1 {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .button1 {
+    font-size: 0.5rem;
   }
 }
 

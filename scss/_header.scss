@@ -15,11 +15,11 @@ header {
     max-width: 100%;
     height: calc(100vh - 100px);
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         width: auto;
     }
 
-    @media (max-width: 576px) {
+    @media screen and (max-width: 576px) {
         width: auto;
     }
 }
@@ -31,11 +31,11 @@ header {
     img {
         width: 100%;
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             max-width: 100%
         }
 
-        @media (max-width: 576px) {
+        @media screen and (max-width: 576px) {
             max-width: 100%
         }
     }
@@ -64,8 +64,12 @@ header {
             animation: shine 7s linear infinite;
             position: relative;
 
-            @media (max-width: 768px) {
+            @media screen and (max-width: 768px) {
                 font-size: 2rem;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 1rem;
             }
         }
 
@@ -78,8 +82,13 @@ header {
             margin-bottom: 20px;
             text-align: center;
 
-            @media (max-width: 768px) {
+            @media screen and (max-width: 768px) {
                 font-size: 1.5rem;
+
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 1rem;
             }
         }
     }
@@ -100,8 +109,12 @@ header {
     margin: 10px;
     padding: 10px;
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         margin-top: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+        margin-top: 15px;
     }
 
     :hover {
@@ -121,8 +134,12 @@ header {
     margin: 5px;
     padding: 5px;
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 0.5rem;
     }
 
 }
