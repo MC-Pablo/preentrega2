@@ -143,15 +143,46 @@ aside {
 
 }
 
-/* MEDIAS QUERYS */
+/* MEDIAS QUERIES */
 
 @media screen and (max-width:768px) {
 
     .portada {
         display: block;
+        max-width: 100%;
+
+        .textoNos {
+            max-width: 100%;
+            margin: 5px;
+
+        }
 
         aside {
             margin: auto;
+            padding: auto;
+        }
+
+        .imgNosotros2 {
+            max-width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    .portada {
+        display: block;
+        max-width: 100%;
+
+        .textoNos {
+            max-width: 100%;
+            margin: 5px;
+
+        }
+
+        aside {
+            margin: 5px;
             padding: auto;
         }
 
@@ -166,7 +197,68 @@ aside {
     .sectionNosotros {
         justify-content: center;
         max-width: 100%;
-        max-height: 100%;
+        margin: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "text"
+            "text"
+            "img1"
+            "text1"
+            "img2"
+            "text2"
+            "img3"
+            "text3"
+            "suc";
+
+
+
+        .textBox1,
+        .textBox2,
+        .textBox3 {
+            max-width: 100%;
+            text-align: center;
+            margin: 5px;
+
+            p {
+                max-width: 100%;
+                text-align: center;
+                margin: 5px;
+            }
+
+        }
+
+        .imgNos1,
+        .imgNos2,
+        .imgNos3 {
+            max-width: 100%;
+            margin: 5px;
+            justify-self: center;
+        }
+
+        .imgNosotros2,
+        .imgNosotros3,
+        .imgNosotros4 {
+            max-width: 100%;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+
+            justify-self: center;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .sectionNosotros {
+        justify-content: center;
+        max-width: 100%;
+        margin: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
         grid-template-areas:
@@ -181,9 +273,17 @@ aside {
             "suc";
 
         .textBox1,
-        .textBox2m .textBox3 {
+        .textBox2,
+        .textBox3 {
             max-width: 100%;
             text-align: center;
+            margin: 5px;
+
+            p {
+                max-width: 100%;
+                text-align: center;
+                margin: 5px;
+            }
 
         }
 
@@ -191,12 +291,14 @@ aside {
         .imgNos2,
         .imgNos3 {
             max-width: 100%;
+            margin: 5px;
             justify-self: center;
         }
 
         .imgNosotros2,
         .imgNosotros3,
         .imgNosotros4 {
+            max-width: 100%;
             width: 300px;
             height: 300px;
             object-fit: cover;
@@ -206,31 +308,8 @@ aside {
             padding: 0px;
 
         }
-    }
-}
 
-@media screen and (max-width:576px) {
-    .sectionNosotros {
-        margin: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto auto auto auto auto auto auto;
-        grid-template-areas:
-            "text"
-            "text"
-            "img1"
-            "text1"
-            "img2"
-            "text2"
-            "img3"
-            "text3"
-            "suc";
 
-        img,
-        p,
-        h2,
-        h3 {
-            max-width: 100%;
-        }
     }
 }
 
@@ -238,5 +317,22 @@ aside {
     .sucursales {
         display: block;
         max-width: 100%;
+    }
+
+    iframe {
+        max-width: 100%;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .sucursales {
+        display: block;
+        max-width: 100%;
+    }
+
+    iframe {
+        max-width: 100%;
+
     }
 }

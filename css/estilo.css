@@ -176,6 +176,10 @@ main {
   margin: 20px;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
   .textoProd1,
@@ -184,25 +188,70 @@ main {
   .textoProd4,
   .textoProd6 {
     text-align: center;
-    width: auto;
+    max-width: 100%;
     height: auto;
     margin: auto;
     padding: auto;
+  }
+  .textoProd1 p,
+  .textoProd2 p,
+  .textoProd3 p,
+  .textoProd4 p,
+  .textoProd6 p {
+    max-width: 100%;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .textoProd1,
+  .textoProd2,
+  .textoProd3,
+  .textoProd4,
+  .textoProd6 {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+  }
+  .textoProd1 p,
+  .textoProd2 p,
+  .textoProd3 p,
+  .textoProd4 p,
+  .textoProd6 p {
+    max-width: 100%;
+    margin: 5px;
   }
 }
 @media screen and (max-width: 768px) {
   .textoProd5 h2 {
     text-align: center;
-    width: auto;
+    max-width: 100%;
     height: auto;
-    margin: auto;
+    margin: 5px;
     padding: auto;
   }
   .textoProd5 p {
     text-align: center;
-    width: auto;
+    max-width: 100%;
     height: auto;
-    margin: auto;
+    margin: 5px;
+    padding: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .textoProd5 h2 {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: auto;
+  }
+  .textoProd5 p {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
     padding: auto;
   }
 }
@@ -212,12 +261,29 @@ main {
   .divImgCafetera {
     display: flex;
     justify-self: center;
+    max-width: 100%;
   }
   .divImgAccesorios p,
   .divImgCafeD p,
   .divImgCafetera p {
-    margin: 20px;
-    width: auto;
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .divImgAccesorios,
+  .divImgCafeD,
+  .divImgCafetera {
+    display: flex;
+    justify-self: center;
+    max-width: 100%;
+  }
+  .divImgAccesorios p,
+  .divImgCafeD p,
+  .divImgCafetera p {
+    margin: 5px;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -633,13 +699,35 @@ aside .imgNosotros1 {
   grid-template-areas: "text text" "img1 text1" "text2 img2" "img3 text3" "suc suc";
 }
 
-/* MEDIAS QUERYS */
+/* MEDIAS QUERIES */
 @media screen and (max-width: 768px) {
   .portada {
     display: block;
+    max-width: 100%;
+  }
+  .portada .textoNos {
+    max-width: 100%;
+    margin: 5px;
   }
   .portada aside {
     margin: auto;
+    padding: auto;
+  }
+  .portada .imgNosotros2 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .portada {
+    display: block;
+    max-width: 100%;
+  }
+  .portada .textoNos {
+    max-width: 100%;
+    margin: 5px;
+  }
+  .portada aside {
+    margin: 5px;
     padding: auto;
   }
   .portada .imgNosotros2 {
@@ -650,25 +738,36 @@ aside .imgNosotros1 {
   .sectionNosotros {
     justify-content: center;
     max-width: 100%;
-    max-height: 100%;
+    margin: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
     grid-template-areas: "text" "text" "img1" "text1" "img2" "text2" "img3" "text3" "suc";
   }
   .sectionNosotros .textBox1,
-  .sectionNosotros .textBox2m .textBox3 {
+  .sectionNosotros .textBox2,
+  .sectionNosotros .textBox3 {
     max-width: 100%;
     text-align: center;
+    margin: 5px;
+  }
+  .sectionNosotros .textBox1 p,
+  .sectionNosotros .textBox2 p,
+  .sectionNosotros .textBox3 p {
+    max-width: 100%;
+    text-align: center;
+    margin: 5px;
   }
   .sectionNosotros .imgNos1,
   .sectionNosotros .imgNos2,
   .sectionNosotros .imgNos3 {
     max-width: 100%;
+    margin: 5px;
     justify-self: center;
   }
   .sectionNosotros .imgNosotros2,
   .sectionNosotros .imgNosotros3,
   .sectionNosotros .imgNosotros4 {
+    max-width: 100%;
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -679,21 +778,61 @@ aside .imgNosotros1 {
 }
 @media screen and (max-width: 576px) {
   .sectionNosotros {
-    margin: auto;
+    justify-content: center;
+    max-width: 100%;
+    margin: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
     grid-template-areas: "text" "text" "img1" "text1" "img2" "text2" "img3" "text3" "suc";
   }
-  .sectionNosotros img,
-  .sectionNosotros p,
-  .sectionNosotros h2,
-  .sectionNosotros h3 {
+  .sectionNosotros .textBox1,
+  .sectionNosotros .textBox2,
+  .sectionNosotros .textBox3 {
     max-width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+  .sectionNosotros .textBox1 p,
+  .sectionNosotros .textBox2 p,
+  .sectionNosotros .textBox3 p {
+    max-width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+  .sectionNosotros .imgNos1,
+  .sectionNosotros .imgNos2,
+  .sectionNosotros .imgNos3 {
+    max-width: 100%;
+    margin: 5px;
+    justify-self: center;
+  }
+  .sectionNosotros .imgNosotros2,
+  .sectionNosotros .imgNosotros3,
+  .sectionNosotros .imgNosotros4 {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    justify-self: center;
+    margin: 0px;
+    padding: 0px;
   }
 }
 @media screen and (max-width: 768px) {
   .sucursales {
     display: block;
+    max-width: 100%;
+  }
+  iframe {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sucursales {
+    display: block;
+    max-width: 100%;
+  }
+  iframe {
     max-width: 100%;
   }
 }
@@ -743,6 +882,7 @@ iframe {
   margin-bottom: 5%;
 }
 
+/* MEDIAS QUERIES */
 @media only screen and (max-width: 768px) {
   .textoMundo1,
   .tiposCafe1,
@@ -915,16 +1055,22 @@ iframe {
 @media screen and (max-width: 768px) {
   .carouselGrid1 {
     flex-direction: column;
-    width: auto;
-    height: auto;
+    max-width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto;
     grid-template-areas: "divTexto" "gridTitulo" "carousel1" "textocarousel1";
   }
   .carouselGrid1 .divTexto,
   .carouselGrid1 .indexTexto1 {
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    padding: 10px;
+  }
+  .carouselGrid1 .divTexto p,
+  .carouselGrid1 .indexTexto1 p {
+    max-width: 100%;
+    margin: 5px;
   }
   .carouselGrid1 .imgCafe {
     width: 80vw;
@@ -941,8 +1087,15 @@ iframe {
   }
   .carouselGrid1 .divTexto,
   .carouselGrid1 .indexTexto1 {
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    padding: 10px;
+  }
+  .carouselGrid1 .divTexto p,
+  .carouselGrid1 .indexTexto1 p {
+    max-width: 100%;
+    margin: 5px;
   }
   .carouselGrid1 .imgCafe {
     width: 80vw;
@@ -951,22 +1104,41 @@ iframe {
 @media screen and (max-width: 768px) {
   .carouselGrid2 {
     flex-direction: column;
-    width: auto;
-    height: auto;
+    max-width: 100%;
     align-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas: "carousel2" "textocarousel2";
   }
+  .carouselGrid2 .indexTexto2 {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  .carouselGrid2 .indexTexto2 p {
+    max-width: 100%;
+    margin: 5px;
+  }
 }
 @media screen and (max-width: 576px) {
   .carouselGrid2 {
     flex-direction: column;
-    width: auto;
+    max-width: 100%;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas: "carousel2" "textocarousel2";
+  }
+  .carouselGrid2 .indexTexto2 {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  .carouselGrid2 .indexTexto2 p {
+    max-width: 100%;
+    margin: 5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -976,6 +1148,16 @@ iframe {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas: "carousel3" "textocarousel3";
+  }
+  .carouselGrid3 .indexTexto3 {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  .carouselGrid3 .indexTexto3 p {
+    max-width: 100%;
+    margin: 5px;
   }
 }
 @media screen and (max-width: 576px) {

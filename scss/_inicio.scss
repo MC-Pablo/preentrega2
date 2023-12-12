@@ -165,8 +165,8 @@
 @media screen and (max-width:768px) {
     .carouselGrid1 {
         flex-direction: column;
-        width: auto;
-        height: auto;
+        max-width: 100%;
+
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto auto auto;
         grid-template-areas:
@@ -177,8 +177,15 @@
 
         .divTexto,
         .indexTexto1 {
+            max-width: 100%;
             margin-left: 0;
             margin-right: 0;
+            padding: 10px;
+
+            p {
+                max-width: 100%;
+                margin: 5px;
+            }
         }
 
         .imgCafe {
@@ -205,8 +212,15 @@
 
         .divTexto,
         .indexTexto1 {
+            max-width: 100%;
             margin-left: 0;
             margin-right: 0;
+            padding: 10px;
+
+            p {
+                max-width: 100%;
+                margin: 5px;
+            }
         }
 
         .imgCafe {
@@ -214,32 +228,58 @@
 
         }
     }
+
 }
 
 @media screen and (max-width:768px) {
     .carouselGrid2 {
         flex-direction: column;
-        width: auto;
-        height: auto;
+        max-width: 100%;
         align-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
         grid-template-areas:
             "carousel2"
             "textocarousel2";
+
+        .indexTexto2 {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 10px;
+
+            p {
+                max-width: 100%;
+                margin: 5px;
+            }
+        }
+
+
     }
 }
 
 @media screen and (max-width:576px) {
     .carouselGrid2 {
         flex-direction: column;
-        width: auto;
+        max-width: 100%;
         height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
         grid-template-areas:
             "carousel2"
             "textocarousel2";
+
+        .indexTexto2 {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 10px;
+
+            p {
+                max-width: 100%;
+                margin: 5px;
+            }
+        }
     }
 }
 
@@ -252,6 +292,18 @@
         grid-template-areas:
             "carousel3"
             "textocarousel3";
+
+        .indexTexto3 {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 10px;
+
+            p {
+                max-width: 100%;
+                margin: 5px;
+            }
+        }
     }
 }
 
